@@ -28,12 +28,11 @@ jobs:
       run: |
         poetry config virtualenvs.in-project true
         poetry install
-        poetry add flake8
 
     - name: Lint with flake8
       run: |
         poetry run flake8 ./placesremember
 
-    - name: Test with pytest
-      run: |
-        poetry run pytest
+#    - name: Test with pytest
+#      run: |
+#        poetry run pytest
